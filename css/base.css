@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f5e0c5;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.Header {
+    background-color: #0d1017;
+    width: 100%;
+    padding: 20px;
+}
+
+.Header .imagem {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+#imagemCentral {
+    width: 400px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.imagem .primeiroParagrafo {
+    padding: 5px;
+    text-align: left;
+    color: white; 
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto .segundoParagrafo {
+    padding: 5px;
+    text-align: center;
+    color: black; 
+    font-size: 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.botao {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #18193e; 
+    color: rgba(255, 255, 255, 0.845); 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.botao:hover {
+    background-color: #e35245; 
+}
+
+#imagemCanCode{
+    height: auto;
+    width: 200px;
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 50s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
